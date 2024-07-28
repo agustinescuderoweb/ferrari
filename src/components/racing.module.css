@@ -1,0 +1,62 @@
+.racing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px; /* Espacio entre las secciones */
+  background-color: #181818;
+  color: white;
+  padding: 20px;
+}
+
+.section {
+  border: 1px solid #ccc; /* Añade un borde para ver las secciones claramente */
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.items {
+  margin-top: 8px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  margin: 0; /* Asegúrate de que no haya márgenes adicionales */
+}
+
+  
+  @media (max-width: 768px) {
+    .racing {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .toggleSymbol {
+      display: inline-block; /* Muestra el símbolo solo en pantallas pequeñas */
+    }
+  
+    .items {
+      display: none; /* Oculta los h2 por defecto en pantallas pequeñas */
+    }
+  
+    .items.open {
+      display: flex; /* Muestra los h2 cuando isOpen es true en pantallas pequeñas */
+      flex-direction: column; /* Asegura que los h2 estén en una columna */
+      margin-left: 20px; /* Opcional: para agregar sangría a los elementos desplegados */
+    }
+  }
+  

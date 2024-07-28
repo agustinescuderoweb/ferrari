@@ -1,0 +1,130 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding: 10px;
+  background-color: #181818;
+  font-family: Play;
+  color: white;
+  gap: 100px;
+}
+
+.mobileNavbar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobileMenu {
+  position: fixed; /* Use fixed to cover the whole viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #181818; /* Semi-transparent background */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mobileMenu ul {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  list-style-type: none;
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  width: 100%; /* Ensure full width */
+}
+
+.mobileMenu li {
+  margin-bottom: 15px;
+}
+
+.mobileMenu a {
+  color: white; /* Text color */
+  font-size: 24px; /* Increase font size */
+  text-decoration: none; /* Remove underline */
+}
+
+.search {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.2px solid whitesmoke;
+  padding-bottom: 20px;
+}
+
+.logo {
+  width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto; /* Mantén la proporción */
+}
+
+.equis {
+  width: 40px; /* Ajusta el tamaño del icono según sea necesario */
+  height: auto; /* Mantén la proporción */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+  position: fixed;
+  top: 16px;
+  right: 24px;
+}
+
+.search span {
+  margin-left: 240px;
+}
+
+.desktop {
+  display: flex;
+  align-items: center;
+}
+
+.desktopMenu {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  margin-left: 30px;
+}
+
+.desktopMenu li {
+  margin: 0 10px;
+}
+
+.logo, .desktopLogo {
+  cursor: pointer;
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+  .mobileNavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.open {
+  display: block;
+}

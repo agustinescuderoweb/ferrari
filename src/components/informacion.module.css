@@ -1,0 +1,74 @@
+.informacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0; /* Eliminar espacio entre columnas */
+    padding: 0; /* Eliminar padding adicional */
+  }
+  
+  .info {
+    display: contents;
+  }
+  
+  .contenido {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Para evitar que la imagen desborde el contenedor al hacer zoom */
+  }
+  
+  .contenido img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 826 / 650;
+    object-fit: cover;
+    transition: transform 5s ease; /* Transición suave para el zoom */
+  }
+  
+  .contenido:hover img {
+    transform: scale(1.3); /* Zoom al 110% cuando el cursor está sobre la imagen */
+  }  
+  
+  
+  .contenido p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Play', sans-serif;
+  }
+  
+  .contenido p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .contenido p:nth-of-type(1) {
+    bottom: 110px; /* Ajustar la posición para que no se superpongan */
+    font-size: 25px;
+  }
+  
+  .contenido p:nth-of-type(2) {
+    bottom: 40px; /* Ajustar la posición para que no se superpongan */
+    font-size: 50px;
+  }
+  
+  .contenido p:nth-of-type(3) {
+    bottom: 10px; /* Ajustar la posición para que no se superpongan */
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 600px) {
+    .informacion {
+      display: flex;
+      flex-direction: column;
+    }
+  }

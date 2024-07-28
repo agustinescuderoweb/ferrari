@@ -1,0 +1,71 @@
+.textSize1 {
+    font-size: 30px;
+    font-family: Play; /* Tamaño de letra para el primer texto */
+  }
+  
+  .textSize2 {
+    font-size: 50px;
+    font-family: Play; /* Tamaño de letra para el segundo texto */
+  }
+  
+  .textSize3 {
+    font-size: 35px;
+    font-family: Play; /* Tamaño de letra para el tercer texto */
+  }
+  
+  /* videoplayer.module.css */
+
+.loader {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: gray; /* Color base para los puntos */
+    opacity: 0.5;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .show {
+    opacity: 1;
+    background-color: red; /* Color para el punto activo */
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  
+  .icon {
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%; /* Ajusta el tamaño del icono aquí */
+  }
+  
+  .icon:hover {
+    border:1px solid red;
+    cursor: pointer;
+    color: red
+  }
+
+  .botton {
+    position: absolute;
+    left: 900;
+    top: 130px;
+    padding: 16px;
+    color: white;
+
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .botton {
+      position: absolute;
+      top: 80px; 
+      left: 50%;
+      transform: translateX(-50%); 
+
+    }
+    
+  }

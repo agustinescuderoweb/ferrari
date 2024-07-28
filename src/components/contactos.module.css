@@ -1,0 +1,174 @@
+.contacto {
+    background-color: #181818;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid gray; /* Línea blanca arriba */
+    border-bottom: 2px solid gray /* Línea blanca abajo */
+  }
+
+  .fa {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Alinea los elementos a los extremos del contenedor */
+    width: 300px; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 10px; /* Opcional: Añade padding según necesites */
+  }
+
+  
+  .imag {
+    margin-right: 10px; /* Añade un margen derecho si necesitas espacio entre la imagen y el título */
+  }
+  
+  .fa h1 {
+    margin: 0; /* Asegúrate de que no haya margen extra en el h1 */
+  }
+  
+  .tw {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Alinea los elementos a los extremos del contenedor */
+    width: 300px; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 10px; /* Opcional: Añade padding según necesites */
+  }
+
+  .in {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Alinea los elementos a los extremos del contenedor */
+    width: 300px; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 10px; /* Opcional: Añade padding según necesites */
+  }
+
+  .twi {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Alinea los elementos a los extremos del contenedor */
+    width: 300px; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 10px; /* Opcional: Añade padding según necesites */
+  }
+
+  .lin {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Alinea los elementos a los extremos del contenedor */
+    width: 300px; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 10px; /* Opcional: Añade padding según necesites */
+  }
+
+  .you {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Alinea los elementos a los extremos del contenedor */
+    width: 300px; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 10px; /* Opcional: Añade padding según necesites */
+  }
+
+  .tik {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Alinea los elementos a los extremos del contenedor */
+    width: 300px; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 10px; /* Opcional: Añade padding según necesites */
+  }
+  .plus {
+    margin-left: 50px; /* Empuja el símbolo "plus" al extremo derecho */
+  }
+
+  .copy {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    margin: 30px;
+    color: gray;
+  }
+  
+  @media screen and (max-width: 768px) {
+   .contactos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   }
+
+   .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: center;
+   }
+
+   .copy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+   }
+
+   .copy p {
+    width: 80%;
+   }
+
+   .one {
+    display: flex;
+    flex-direction: column;
+  
+   }
+
+   .two {
+    display: flex;
+    flex-direction: column;
+    
+   }
+
+   .three {
+    display: flex;
+    flex-direction: column;
+  
+   }
+
+   .fa {
+    padding: 20px;
+   }
+
+   .tw {
+    padding: 20px;
+   }
+
+   .in {
+    padding: 20px;
+   }
+
+   .twi {
+    padding: 20px;
+   }
+
+   .lin {
+    padding: 20px;
+   }
+
+   .you {
+    padding: 20px;
+   }
+
+   .tik {
+    padding: 20px;
+   }
+  }
