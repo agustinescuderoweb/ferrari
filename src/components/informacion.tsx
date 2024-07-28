@@ -13,13 +13,13 @@ function informacion() {
     <div className={style.informacion}>
       <div className={style.info}>
         <div className={style.contenido}>
-        <Image src={persona} className={style.persona}></Image>
+        <Image src={persona} className={style.persona} alt='per'></Image>
         <p>Colecciones</p>
         <p>Miami Vibes</p>
         <p>Explora</p>
         </div>
         <div className={style.contenido}>
-        <Image src={amarillo}></Image>
+        <Image src={amarillo} alt='ama'></Image>
         <p>Magazine</p>
         <p>El Nombre lo dice todo: Enzo Ferrari</p>
         <p>Para saber más</p>
@@ -27,13 +27,13 @@ function informacion() {
       </div>
       <div className={style.info}>
         <div className={style.contenido}>
-        <Image src={corso}></Image>
+        <Image src={corso} alt='cor'></Image>
         <p>Corso Piloto</p>
         <p>El atractivo del Circuito</p>
         <p>Para saber más</p>
         </div>
         <div className={style.contenido}>
-        <Image src={manejando}></Image>
+        <Image src={manejando} alt='man'></Image>
         <p>Ferrari Approbed</p>
         <p>Pre-Owned</p>
         <p>Para saber más</p>
@@ -41,13 +41,13 @@ function informacion() {
       </div>
       <div className={style.info}>
          <div className={style.contenido}>
-        <Image src={museo}></Image>
+        <Image src={museo} alt='mus'></Image>
         <p>Ferrari Museums</p>
         <p>ONE OF A KIND</p>
         <p>Para saber más</p>
         </div>
         <div className={style.contenido}>
-        <Image src={pasado}></Image>
+        <Image src={pasado} alt='pas'></Image>
         <p>Modelo del Pasado</p>
         <p>Para saber más</p>
       </div>
