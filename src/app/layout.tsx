@@ -18,7 +18,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/ferrari-logo.svg" type="image/svg+xml" />
-        <meta name="description" content={metadata.description} />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
