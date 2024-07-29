@@ -13,36 +13,46 @@ function informacion() {
     <div className={style.informacion}>
       <div className={style.info}>
         <div className={style.contenido}>
+<<<<<<< HEAD
         <Image src={persona} className={style.persona}></Image>
+=======
+        <Image src={persona} className={style.persona} alt='per'></Image>
+        <p>Colecciones</p>
+>>>>>>> c7336afc4efa43b3a5c04d78c77482bb9b9ba2c2
         <p>Miami Vibes</p>
         <p>Explora</p>
         </div>
         <div className={style.contenido}>
+<<<<<<< HEAD
         <Image src={amarillo}></Image>
+=======
+        <Image src={amarillo} alt='ama'></Image>
+        <p>Magazine</p>
+>>>>>>> c7336afc4efa43b3a5c04d78c77482bb9b9ba2c2
         <p>El Nombre lo dice todo: Enzo Ferrari</p>
         <p>Para saber más</p>
         </div>
       </div>
       <div className={style.info}>
         <div className={style.contenido}>
-        <Image src={corso}></Image>
+        <Image src={corso} alt='cor'></Image>
         <p>Corso Piloto</p>
         <p>Para saber más</p>
         </div>
         <div className={style.contenido}>
-        <Image src={manejando}></Image>
+        <Image src={manejando} alt='man'></Image>
         <p>Ferrari Approbed</p>
         <p>Para saber más</p>
         </div>
       </div>
       <div className={style.info}>
          <div className={style.contenido}>
-        <Image src={museo}></Image>
+        <Image src={museo} alt='mus'></Image>
         <p>Ferrari Museums</p>
         <p>Para saber más</p>
         </div>
         <div className={style.contenido}>
-        <Image src={pasado}></Image>
+        <Image src={pasado} alt='pas'></Image>
         <p>Modelo del Pasado</p>
         <p>Para saber más</p>
       </div>

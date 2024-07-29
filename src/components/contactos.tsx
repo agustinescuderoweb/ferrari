@@ -16,35 +16,35 @@ function contactos() {
       <div className={styles.redes}>
        <div className={styles.one}>
             <div className={styles.fa}>
-             <span><Image className={styles.imag} src={face}></Image></span>
+             <span><Image className={styles.imag} src={face} alt='face'></Image></span>
              <h1>FACEBOOK</h1>
             </div>
              <div className={styles.tw}>
-             <span><Image className={styles.imag} src={twitch}></Image></span>
+             <span><Image className={styles.imag} src={twitch} alt='twi'></Image></span>
              <h1>TWITCH</h1>
              </div>
              </div>
         <div className={styles.two}>
             <div className={styles.in}>
-             <span><Image className={styles.imag} src={insta}></Image></span>
+             <span><Image className={styles.imag} src={insta} alt='ins'></Image></span>
              <h1>INSTAGRAM</h1>
             </div>
              <div className={styles.twi}>
-             <span><Image className={styles.imag} src={twitter}></Image></span>
+             <span><Image className={styles.imag} src={twitter} alt='twi'></Image></span>
              <h1>X</h1>
              </div></div>
         <div className={styles.three}>
             <div className={styles.lin}>
-             <span><Image className={styles.imag} src={linkedin}></Image></span>
+             <span><Image className={styles.imag} src={linkedin} alt='lin'></Image></span>
              <h1>LINKEDIN</h1>
             </div>
              <div className={styles.you}>
-             <span><Image className={styles.imag} src={youtube}></Image></span>
+             <span><Image className={styles.imag} src={youtube} alt='you'></Image></span>
              <h1>YOUTUBE</h1>
              </div></div>
         <div className={styles.for}>
             <div className={styles.tik}>
-             <span><Image className={styles.imag} src={tiktok}></Image></span>
+             <span><Image className={styles.imag} src={tiktok} alt='tik'></Image></span>
              <h1>TIK TOK</h1>
             </div>
             </div>

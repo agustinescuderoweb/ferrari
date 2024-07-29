@@ -113,4 +113,8 @@ const Carousel = () => {
 export default Carousel;
 
 
+<<<<<<< HEAD
   
+=======
+  
+>>>>>>> c7336afc4efa43b3a5c04d78c77482bb9b9ba2c2

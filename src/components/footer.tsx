@@ -14,7 +14,7 @@ function footer() {
            <h1>Contactos</h1>
            </div>   
         </div>
-        <div className={styles.she}><div className={styles.shell}><Image src={shell}></Image></div></div>
+        <div className={styles.she}><div className={styles.shell}><Image src={shell} alt='shell'></Image></div></div>
         </div>
   )
 }
