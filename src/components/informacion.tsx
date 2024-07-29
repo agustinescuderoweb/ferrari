@@ -13,12 +13,12 @@ function informacion() {
     <div className={style.informacion}>
       <div className={style.info}>
         <div className={style.contenido}>
-        <Image src={persona} className={style.persona}></Image>
+        <Image src={persona} className={style.persona} alt='persona'></Image>
         <p>Miami Vibes</p>
         <p>Explora</p>
         </div>
         <div className={style.contenido}>
-        <Image src={amarillo}></Image>
+        <Image src={amarillo} alt='ama'></Image>
         <p>El Nombre lo dice todo: Enzo Ferrari</p>
         <p>Para saber más</p>
         </div>
