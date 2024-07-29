@@ -2,15 +2,19 @@ import React from 'react';
 import styles from './menu.module.css';
 import logo from '../../public/ferrari.png';
 import Image from 'next/image';
-import equis from '../../public/icon/x-circle.svg'
+import equis from '../../public/icon/x-circle.svg';
 
-const MobileMenu = ({ closeMenu }) => {
+interface MobileMenuProps {
+  closeMenu: () => void;
+}
+
+const MobileMenu: React.FC<MobileMenuProps> = ({ closeMenu }) => {
   return (
     <div className={styles.mobileMenu}>
       <div className={styles.search}>
         <Image src={logo} alt="Logo" className={styles.logo} />
-        <Image src={equis} alt='Equis' className={styles.equis} onClick={closeMenu}></Image>
-        </div>
+        <Image src={equis} alt='Equis' className={styles.equis} onClick={closeMenu} />
+      </div>
       <ul>
         <li><a href="#" onClick={closeMenu}>RACING</a></li>
         <li><a href="#" onClick={closeMenu}>SPORT CARS</a></li>

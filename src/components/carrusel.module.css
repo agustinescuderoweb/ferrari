@@ -109,7 +109,7 @@
 @media (max-width: 600px) {
   .carouselContainer {
     margin: 0;
-    padding: 0;
+    padding: 0 15px;
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -119,6 +119,7 @@
   .textContainer {
     width: 400px;
     justify-content: space-between;
+    padding: 0 10%;
   }
 
   .imageContainer {

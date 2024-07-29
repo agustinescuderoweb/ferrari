@@ -24,4 +24,8 @@
 
 body {
   font-family: var(--fuente-mi-fuente);
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
 }

@@ -11,7 +11,7 @@ const ImageTextCarousel = () => {
              ["Leer Más"]], image: "/sainz.jpg" },
    
    
-    { text: [["SCUDERIA FERRARI HP ESPORTS TEAM WINS F1 SIM RACING CONSTRUCTORS TITLE"], 
+    { text: [["SCUDERIA FERRARI HP ESPORTS TEAM WINS"], 
              ["The Scuderia Ferrari HP Esports Team has taken the F1 Sim Racing Constructors Championship title for the very first time. "], 
              ["Leer Más"]], image: "/ganadores.jpg" },
 

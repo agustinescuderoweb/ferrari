@@ -74,8 +74,8 @@
   height: auto; /* Mantén la proporción */
   cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
   position: fixed;
-  top: 16px;
-  right: 24px;
+  top: 22px;
+  left: 24px;
 }
 
 .search span {
@@ -128,3 +128,4 @@
 .open {
   display: block;
 }
+

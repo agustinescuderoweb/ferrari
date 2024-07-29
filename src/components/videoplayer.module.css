@@ -55,7 +55,16 @@
     top: 130px;
     padding: 16px;
     color: white;
+  }
 
+  .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 400px;
 
   }
 
@@ -66,6 +75,20 @@
       left: 50%;
       transform: translateX(-50%); 
 
+    }
+
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .texto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+      text-align: center;
     }
     
   }

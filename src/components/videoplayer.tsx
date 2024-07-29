@@ -25,15 +25,14 @@ const Carousel = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Tiempo de carga simulado de 1 segundo
+    }, 3000); // Tiempo de carga simulado de 3 segundos
 
     return () => clearTimeout(timeout);
   }, [currentGroupIndex]);
 
-  
   const [isMuted, setIsMuted] = useState(true); // Asegúrate de que isMuted esté definido
-  const videoRef = useRef(null);
- 
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
   useEffect(() => {
     const video = videoRef.current;
     const tryPlayVideo = () => {
@@ -46,11 +45,11 @@ const Carousel = () => {
         });
       }
     };
-  
+
     tryPlayVideo();
 
     const handleUserInteraction = () => {
-      if (video.paused) {
+      if (video && video.paused) {
         video.play().catch((error) => {
           console.log('Play was prevented:', error);
         });
@@ -72,11 +71,18 @@ const Carousel = () => {
 
   return (
     <div className="relative w-full h-screen">
-      <video className="w-full h-screen object-cover" autoPlay loop muted={isMuted}>
+      <video
+        ref={videoRef}
+        className="w-full h-screen object-cover"
+        autoPlay
+        loop
+        muted={isMuted}
+      >
         <source src="/videos/ferrari.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white">
-        <div className='w-[600px] absolute bottom-[100px] text-center font-bold text-[40px] justify-end'>
+        <div className={styles.contenedor}>
+        <div className={styles.texto}>
           {groups[currentGroupIndex].map((item, index) => (
             <div key={index} className={`${styles.carousel} ${styles.text} ${styles[`textSize${index + 1}`]}`}>
               {item}
@@ -91,7 +97,7 @@ const Carousel = () => {
               className={styles.icon} // Ajusta el tamaño del icono aquí
             />
           </button>
-        </div>
+        </div></div>
         <div className="flex justify-center absolute bottom-[70px] mt-4">
           {[0, 1, 2].map((index) => (
             <div key={index} className="mx-1">
@@ -105,5 +111,6 @@ const Carousel = () => {
 };
 
 export default Carousel;
+
 
   
