@@ -13,22 +13,12 @@ function informacion() {
     <div className={style.informacion}>
       <div className={style.info}>
         <div className={style.contenido}>
-<<<<<<< HEAD
         <Image src={persona} className={style.persona}></Image>
-=======
-        <Image src={persona} className={style.persona} alt='per'></Image>
-        <p>Colecciones</p>
->>>>>>> c7336afc4efa43b3a5c04d78c77482bb9b9ba2c2
         <p>Miami Vibes</p>
         <p>Explora</p>
         </div>
         <div className={style.contenido}>
-<<<<<<< HEAD
         <Image src={amarillo}></Image>
-=======
-        <Image src={amarillo} alt='ama'></Image>
-        <p>Magazine</p>
->>>>>>> c7336afc4efa43b3a5c04d78c77482bb9b9ba2c2
         <p>El Nombre lo dice todo: Enzo Ferrari</p>
         <p>Para saber más</p>
         </div>
