@@ -92,3 +92,10 @@
     }
     
   }
+
+  @media screen and (max-width: 568px) { 
+    .texto {
+      margin-top: 150px;
+    }
+
+  }
